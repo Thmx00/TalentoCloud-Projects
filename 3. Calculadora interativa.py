@@ -26,8 +26,8 @@ def calculadora(num1, operacao, num2):
             return num1/num2
     else:
         return 0
-continuar = true
-while (continuar == true):
+continuar = True
+while (continuar == True):
     print("CALCULADORA SIMPLES")
     print("Sinais operacionais dispopníveis")
     print("1: SOMA")
@@ -41,7 +41,7 @@ while (continuar == true):
     if((operacao < 0) or (operacao > 4)):
             print("Essa opção não existe")
     elif(operacao == 0):
-            continuar == false
+            continuar == False
     else:
         print("Digite o primeiro número: ")
         num1 = float(input())
