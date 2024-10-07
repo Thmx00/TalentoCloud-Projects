@@ -38,7 +38,7 @@ while (continuar == true):
     
     print("Digite o sinal operacional: ")
     operacao = int(input())
-    if((operacao < 0) and (operacao > 4)):
+    if((operacao < 0) or (operacao > 4)):
             print("Essa opção não existe")
     elif(operacao == 0):
             continuar == false
