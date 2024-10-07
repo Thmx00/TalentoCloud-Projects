@@ -26,7 +26,7 @@ def calculadora(num1, operacao, num2):
             return num1/num2
     else:
         return 0
-continuar == true
+continuar = true
 while (continuar == true):
     print("CALCULADORA SIMPLES")
     print("Sinais operacionais dispopníveis")
