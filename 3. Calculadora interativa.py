@@ -41,7 +41,7 @@ while (continuar == True):
     if((operacao < 0) or (operacao > 4)):
             print("Essa opção não existe")
     elif(operacao == 0):
-            continuar == False
+            continuar = False
     else:
         print("Digite o primeiro número: ")
         num1 = float(input())
