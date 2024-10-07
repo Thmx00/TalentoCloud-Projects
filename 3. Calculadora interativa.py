@@ -26,22 +26,28 @@ def calculadora(num1, operacao, num2):
             return num1/num2
     else:
         return 0
+continuar == true
+while (continuar == true):
+    print("CALCULADORA SIMPLES")
+    print("Sinais operacionais dispopníveis")
+    print("1: SOMA")
+    print("2: SUBTRAÇÃO")
+    print("3: MULTIPLICAÇÃO")
+    print("4: DIVISÃO")
+    print()
     
-print("CALCULADORA SIMPLES")
-print("Sinais operacionais dispopníveis")
-print("1: SOMA")
-print("2: SUBTRAÇÃO")
-print("3: MULTIPLICAÇÃO")
-print("4: DIVISÃO")
-print()
-   
-print("Digite o primeiro número: ")
-num1 = float(input())
-print("Digite o sinal operacional: ")
-operacao = int(input())
-print("Digite o segundo número: ")
-num2 = float(input())
-print()
+    print("Digite o sinal operacional: ")
+    operacao = int(input())
+    if((operacao < 0) and (operacao > 4)):
+            print("Essa opção não existe")
+    elif(operacao == 0):
+            continuar == false
+    else:
+        print("Digite o primeiro número: ")
+        num1 = float(input())
+        print("Digite o segundo número: ")
+        num2 = float(input())
+        print()
 
-resultado = calculadora(num1, operacao, num2)
-print(f"O resultado é: {resultado}")
+        resultado = calculadora(num1, operacao, num2)
+        print(f"O resultado é: {resultado}")
